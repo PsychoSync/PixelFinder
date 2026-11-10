@@ -3,8 +3,8 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-swift build -c release --arch "$(uname -m)"
-BIN="$(swift build -c release --arch "$(uname -m)" --show-bin-path)/PixelFinder"
+swift build -c release --arch arm64 --arch x86_64
+BIN="$(swift build -c release --arch arm64 --arch x86_64 --show-bin-path)/PixelFinder"
 
 APP="PixelFinder.app"
 rm -rf "$APP"

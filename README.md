@@ -28,7 +28,8 @@ thumbnail with **nearest-neighbour** scaling (no blurry bilinear previews).
 open PixelFinder.app
 ```
 
-Requires Xcode / Swift 5.9+ and macOS 13+.
+Requires Xcode / Swift 5.9+ and macOS 13+. The build produces a universal
+binary (Apple Silicon and Intel).
 
 The app icon lives in `Icon/`. `Icon/make_icon.py` (needs Pillow + numpy)
 snaps `icon_source.png` onto its native pixel lattice and regenerates
